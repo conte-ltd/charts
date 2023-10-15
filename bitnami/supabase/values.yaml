@@ -2580,7 +2580,7 @@ kong:
 ## @param postgresql.service.ports.postgresql PostgreSQL service port
 ##
 postgresql:
-  enabled: true
+  enabled: false
   ## Bitnami PostgreSQL image version
   ## ref: https://hub.docker.com/r/bitnami/supabase-postgres/tags/
   ## @param postgresql.image.registry PostgreSQL image registry
@@ -2644,9 +2644,9 @@ postgresql:
 ##
 externalDatabase:
   host: ""
-  port: 5432
-  user: supabase_admin
+  port: 54322
+  user: postgres
   database: postgres
-  password: ""
+  password: postgres
   existingSecret: ""
   existingSecretPasswordKey: ""
